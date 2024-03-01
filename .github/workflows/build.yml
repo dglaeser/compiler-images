@@ -19,8 +19,8 @@ jobs:
       - name: Build-and-push-image
         uses: docker/build-push-action@v4.1.1
         with:
-          context: docker
-          file: docker/gcc/Dockerfile
+          context: .
+          file: gcc/Dockerfile
           push: true
           tags: dglaeser/compiler-images:gcc-14
           target: gcc
@@ -42,8 +42,8 @@ jobs:
       - name: Build-and-push-image
         uses: docker/build-push-action@v4.1.1
         with:
-          context: docker
-          file: docker/clang/Dockerfile
+          context: .
+          file: clang/Dockerfile
           push: true
           tags: dglaeser/compiler-images:clang-18
           target: clang
