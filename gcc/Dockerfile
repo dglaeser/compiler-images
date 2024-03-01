@@ -36,6 +36,7 @@ RUN apt-get update \
         binutils \
         make \
         libmpc-dev \
+        gcc-multilib \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY --from=builder /gcc-${TAG}/install /gcc-${TAG}/
