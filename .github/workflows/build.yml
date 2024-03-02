@@ -29,6 +29,7 @@ jobs:
 
   build-clang-image:
     runs-on: ubuntu-22.04
+    needs: build-gcc-image
     steps:
       - name: checkout-repo
         uses: actions/checkout@v2
