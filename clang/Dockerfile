@@ -31,6 +31,7 @@ RUN apt-get update \
         ca-certificates \
         git \
         cmake \
+        make \
         libstdc++-12-dev \
         binutils \
     && apt-get clean \
