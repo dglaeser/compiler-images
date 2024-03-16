@@ -6,11 +6,11 @@ on:
       tag:
         description: 'Release tag to build from'
         required: false
-        default: 'llvmorg-18.1.0-rc4'
+        default: '2e8417680a9ab032859c936b2ceb773bb08e08ca'
       version:
         description: 'Version corresponding to the chosen tag'
         required: false
-        default: '18'
+        default: '19-git'
 
 jobs:
   build-image:
